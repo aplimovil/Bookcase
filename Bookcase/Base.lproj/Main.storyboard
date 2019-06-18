@@ -63,6 +63,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Icv-JA-5By" firstAttribute="trailing" secondItem="o4g-or-ufm" secondAttribute="trailing" constant="16" id="1ge-i9-veN"/>
+                            <constraint firstItem="7xl-eQ-ZGX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="2Af-wn-ss4"/>
                             <constraint firstItem="o4g-or-ufm" firstAttribute="top" secondItem="c0z-CT-Aef" secondAttribute="bottom" constant="8" symbolic="YES" id="4Cl-mk-njY"/>
                             <constraint firstItem="c0z-CT-Aef" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Da-FL-uUO"/>
                             <constraint firstItem="o4g-or-ufm" firstAttribute="leading" secondItem="ceM-L4-Xq8" secondAttribute="trailing" constant="8" symbolic="YES" id="E8A-KF-JiB"/>
@@ -71,23 +72,52 @@
                             <constraint firstItem="c0z-CT-Aef" firstAttribute="top" secondItem="7xl-eQ-ZGX" secondAttribute="bottom" constant="8" symbolic="YES" id="K5T-dq-Thm"/>
                             <constraint firstItem="vFc-Hg-34T" firstAttribute="firstBaseline" secondItem="K59-gg-5ay" secondAttribute="firstBaseline" id="Ky4-He-v92"/>
                             <constraint firstItem="Icv-JA-5By" firstAttribute="trailing" secondItem="vSH-XD-HqM" secondAttribute="trailing" constant="16" id="LMK-wz-XsC"/>
-                            <constraint firstItem="vFc-Hg-34T" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="Nn6-Bk-a3g"/>
+                            <constraint firstItem="vFc-Hg-34T" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="Nn6-Bk-a3g">
+                                <variation key="heightClass=compact" constant="300"/>
+                            </constraint>
                             <constraint firstItem="Icv-JA-5By" firstAttribute="trailing" secondItem="K59-gg-5ay" secondAttribute="trailing" constant="16" id="Og8-I0-NiV"/>
                             <constraint firstItem="7xl-eQ-ZGX" firstAttribute="top" secondItem="Icv-JA-5By" secondAttribute="top" id="QIe-dc-T3Z"/>
-                            <constraint firstItem="Icv-JA-5By" firstAttribute="trailing" secondItem="7xl-eQ-ZGX" secondAttribute="trailing" constant="16" id="RNS-3L-f2Q"/>
+                            <constraint firstItem="Icv-JA-5By" firstAttribute="trailing" secondItem="7xl-eQ-ZGX" secondAttribute="trailing" constant="16" id="RNS-3L-f2Q">
+                                <variation key="heightClass=compact" constant="450"/>
+                            </constraint>
                             <constraint firstItem="K59-gg-5ay" firstAttribute="top" secondItem="o4g-or-ufm" secondAttribute="bottom" constant="8" symbolic="YES" id="RZs-rZ-h4U"/>
                             <constraint firstItem="vSH-XD-HqM" firstAttribute="leading" secondItem="mmJ-3L-JDu" secondAttribute="trailing" constant="8" symbolic="YES" id="c68-x1-5ir"/>
                             <constraint firstItem="ceM-L4-Xq8" firstAttribute="firstBaseline" secondItem="o4g-or-ufm" secondAttribute="firstBaseline" id="dLB-oa-EHp"/>
                             <constraint firstItem="7xl-eQ-ZGX" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="dV7-aq-SB0"/>
-                            <constraint firstItem="mmJ-3L-JDu" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="i1N-X6-g48"/>
+                            <constraint firstItem="mmJ-3L-JDu" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="i1N-X6-g48">
+                                <variation key="heightClass=compact" constant="300"/>
+                            </constraint>
                             <constraint firstItem="vFc-Hg-34T" firstAttribute="width" secondItem="mmJ-3L-JDu" secondAttribute="width" id="jA0-n4-h7b"/>
                             <constraint firstItem="Icv-JA-5By" firstAttribute="bottom" secondItem="vSH-XD-HqM" secondAttribute="bottom" id="jNV-ry-F0y"/>
                             <constraint firstItem="mmJ-3L-JDu" firstAttribute="top" secondItem="vSH-XD-HqM" secondAttribute="top" id="l73-ai-cTN"/>
-                            <constraint firstItem="ceM-L4-Xq8" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="lmi-w1-a5L"/>
+                            <constraint firstItem="ceM-L4-Xq8" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="lmi-w1-a5L">
+                                <variation key="heightClass=compact" constant="300"/>
+                            </constraint>
                             <constraint firstItem="K59-gg-5ay" firstAttribute="leading" secondItem="vFc-Hg-34T" secondAttribute="trailing" constant="8" symbolic="YES" id="mGT-b1-8pN"/>
+                            <constraint firstItem="c0z-CT-Aef" firstAttribute="centerX" secondItem="7xl-eQ-ZGX" secondAttribute="centerX" id="ucW-RN-lkP"/>
                             <constraint firstItem="ceM-L4-Xq8" firstAttribute="width" secondItem="mmJ-3L-JDu" secondAttribute="width" id="vJw-nd-arp"/>
+                            <constraint firstItem="o4g-or-ufm" firstAttribute="top" secondItem="Icv-JA-5By" secondAttribute="top" constant="153.5" id="yjh-MD-mMK">
+                                <variation key="heightClass=compact" constant="16"/>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Icv-JA-5By"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Af-wn-ss4"/>
+                                <exclude reference="yjh-MD-mMK"/>
+                                <exclude reference="ucW-RN-lkP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="2Af-wn-ss4"/>
+                                <exclude reference="FNS-Bf-z2A"/>
+                                <exclude reference="4Cl-mk-njY"/>
+                                <include reference="yjh-MD-mMK"/>
+                                <exclude reference="4Da-FL-uUO"/>
+                                <include reference="ucW-RN-lkP"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
