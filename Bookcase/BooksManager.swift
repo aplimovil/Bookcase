@@ -24,6 +24,17 @@ class BooksManager {
         books.append(book)
     }
     
+    //Update a book of the collection
+    func updateBook(at index: Int, with book: Book) {
+        books[index] = book
+    }
+    
+    //Remove a book of the collection
+    func removeBook(at index: Int) {
+        books.remove(at: index)
+    }
+    
+    
     //Return a dummny collection of books according to Book structure
     private func sampleBooks()->[Book] {
         return [

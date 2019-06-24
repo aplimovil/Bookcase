@@ -42,6 +42,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="EBI-Dr-1sF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -92,13 +95,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmJ-3L-JDu">
-                                <rect key="frame" x="16" y="381" width="57" height="21"/>
+                                <rect key="frame" x="16" y="419" width="57" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vSH-XD-HqM">
-                                <rect key="frame" x="81" y="381" width="278" height="286"/>
+                                <rect key="frame" x="81" y="419" width="278" height="248"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -110,6 +113,17 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ratings" translatesAutoresizingMaskIntoConstraints="NO" id="c0z-CT-Aef">
                                 <rect key="frame" x="112.5" y="272" width="150" height="25"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISBN:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xD-G9-wUt">
+                                <rect key="frame" x="16" y="384.5" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Kb-7q-OTH">
+                                <rect key="frame" x="81" y="381" width="278" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -117,11 +131,14 @@
                             <constraint firstItem="7xl-eQ-ZGX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="2Af-wn-ss4"/>
                             <constraint firstItem="o4g-or-ufm" firstAttribute="top" secondItem="c0z-CT-Aef" secondAttribute="bottom" constant="8" symbolic="YES" id="4Cl-mk-njY"/>
                             <constraint firstItem="c0z-CT-Aef" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Da-FL-uUO"/>
+                            <constraint firstItem="3Kb-7q-OTH" firstAttribute="leading" secondItem="7xD-G9-wUt" secondAttribute="trailing" constant="8" symbolic="YES" id="AH9-iF-KwJ"/>
                             <constraint firstItem="o4g-or-ufm" firstAttribute="leading" secondItem="ceM-L4-Xq8" secondAttribute="trailing" constant="8" symbolic="YES" id="E8A-KF-JiB"/>
                             <constraint firstItem="7xl-eQ-ZGX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="FNS-Bf-z2A"/>
-                            <constraint firstItem="vSH-XD-HqM" firstAttribute="top" secondItem="K59-gg-5ay" secondAttribute="bottom" constant="8" symbolic="YES" id="J1Y-Qk-MwF"/>
                             <constraint firstItem="c0z-CT-Aef" firstAttribute="top" secondItem="7xl-eQ-ZGX" secondAttribute="bottom" constant="8" symbolic="YES" id="K5T-dq-Thm"/>
                             <constraint firstItem="vFc-Hg-34T" firstAttribute="firstBaseline" secondItem="K59-gg-5ay" secondAttribute="firstBaseline" id="Ky4-He-v92"/>
+                            <constraint firstItem="7xD-G9-wUt" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="L90-GJ-jPT">
+                                <variation key="heightClass=compact" constant="300"/>
+                            </constraint>
                             <constraint firstItem="Icv-JA-5By" firstAttribute="trailing" secondItem="vSH-XD-HqM" secondAttribute="trailing" constant="16" id="LMK-wz-XsC"/>
                             <constraint firstItem="vFc-Hg-34T" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="Nn6-Bk-a3g">
                                 <variation key="heightClass=compact" constant="300"/>
@@ -132,12 +149,16 @@
                                 <variation key="heightClass=compact" constant="450"/>
                             </constraint>
                             <constraint firstItem="K59-gg-5ay" firstAttribute="top" secondItem="o4g-or-ufm" secondAttribute="bottom" constant="8" symbolic="YES" id="RZs-rZ-h4U"/>
+                            <constraint firstItem="3Kb-7q-OTH" firstAttribute="top" secondItem="K59-gg-5ay" secondAttribute="bottom" constant="8" symbolic="YES" id="SRZ-kR-fHa"/>
+                            <constraint firstItem="7xD-G9-wUt" firstAttribute="firstBaseline" secondItem="3Kb-7q-OTH" secondAttribute="firstBaseline" id="Zbz-Jt-Ymj"/>
                             <constraint firstItem="vSH-XD-HqM" firstAttribute="leading" secondItem="mmJ-3L-JDu" secondAttribute="trailing" constant="8" symbolic="YES" id="c68-x1-5ir"/>
+                            <constraint firstItem="7xD-G9-wUt" firstAttribute="width" secondItem="mmJ-3L-JDu" secondAttribute="width" id="d7a-SC-hRW"/>
                             <constraint firstItem="ceM-L4-Xq8" firstAttribute="firstBaseline" secondItem="o4g-or-ufm" secondAttribute="firstBaseline" id="dLB-oa-EHp"/>
                             <constraint firstItem="7xl-eQ-ZGX" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="dV7-aq-SB0"/>
                             <constraint firstItem="mmJ-3L-JDu" firstAttribute="leading" secondItem="Icv-JA-5By" secondAttribute="leading" constant="16" id="i1N-X6-g48">
                                 <variation key="heightClass=compact" constant="300"/>
                             </constraint>
+                            <constraint firstItem="Icv-JA-5By" firstAttribute="trailing" secondItem="3Kb-7q-OTH" secondAttribute="trailing" constant="16" id="ilL-mK-mdb"/>
                             <constraint firstItem="vFc-Hg-34T" firstAttribute="width" secondItem="mmJ-3L-JDu" secondAttribute="width" id="jA0-n4-h7b"/>
                             <constraint firstItem="Icv-JA-5By" firstAttribute="bottom" secondItem="vSH-XD-HqM" secondAttribute="bottom" id="jNV-ry-F0y"/>
                             <constraint firstItem="mmJ-3L-JDu" firstAttribute="top" secondItem="vSH-XD-HqM" secondAttribute="top" id="l73-ai-cTN"/>
@@ -147,6 +168,7 @@
                             <constraint firstItem="K59-gg-5ay" firstAttribute="leading" secondItem="vFc-Hg-34T" secondAttribute="trailing" constant="8" symbolic="YES" id="mGT-b1-8pN"/>
                             <constraint firstItem="c0z-CT-Aef" firstAttribute="centerX" secondItem="7xl-eQ-ZGX" secondAttribute="centerX" id="ucW-RN-lkP"/>
                             <constraint firstItem="ceM-L4-Xq8" firstAttribute="width" secondItem="mmJ-3L-JDu" secondAttribute="width" id="vJw-nd-arp"/>
+                            <constraint firstItem="vSH-XD-HqM" firstAttribute="top" secondItem="3Kb-7q-OTH" secondAttribute="bottom" constant="8" symbolic="YES" id="vP9-ei-lBW"/>
                             <constraint firstItem="o4g-or-ufm" firstAttribute="top" secondItem="Icv-JA-5By" secondAttribute="top" constant="153.5" id="yjh-MD-mMK">
                                 <variation key="heightClass=compact" constant="16"/>
                             </constraint>
@@ -185,13 +207,14 @@
                     <connections>
                         <outlet property="authorTextField" destination="K59-gg-5ay" id="1lx-0o-b1b"/>
                         <outlet property="bookCover" destination="7xl-eQ-ZGX" id="bo5-YR-4KC"/>
+                        <outlet property="isbnTextField" destination="3Kb-7q-OTH" id="aPU-Yg-vXg"/>
                         <outlet property="notesTextField" destination="vSH-XD-HqM" id="bBT-tA-IdY"/>
                         <outlet property="titleTextField" destination="o4g-or-ufm" id="LAC-AU-Gmc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2644" y="466.41679160419795"/>
+            <point key="canvasLocation" x="2462" y="466"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VTN-3H-0WN">
@@ -227,11 +250,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlf-oh-8mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704.8" y="466.41679160419795"/>
+            <point key="canvasLocation" x="1674" y="949"/>
         </scene>
     </scenes>
     <resources>
         <image name="book" width="450" height="413"/>
         <image name="ratings" width="150" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="T1o-Jd-L9R"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -11,15 +11,29 @@ class BookViewController: UIViewController {
     
     //Object to hold a BookViewControllerDelegate instance
     var delegate: BookViewControllerDelegate?
+    //Object to hold a Book instance
+    var book: Book?
     //IBOutlets for book form fields
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var authorTextField: UITextField!
     @IBOutlet weak var notesTextField: UITextView!
     @IBOutlet weak var bookCover: UIImageView!
+    @IBOutlet weak var isbnTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //If Book object is not null (e.g. an update operation), fill out the form fields with Book data
+        if let book = book {
+            bookCover.image = book.cover
+            titleTextField.text = book.title
+            authorTextField.text = book.author
+            isbnTextField.text = book.isbn
+            notesTextField.text = book.notes
+            navigationItem.title = "Edit book"
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,9 +65,16 @@ class BookViewController: UIViewController {
     
     //Method to dismiss the current scene
     func dismissMe() {
-        dismiss(animated: true, completion: nil)
+        /*The property presentingViewController property will contain a value
+         if the view controller was presented via a modal segue*/
+        if presentingViewController != nil {
+            // was presented via modal segue
+            dismiss(animated: true, completion: nil)
+        } else {
+            // was pushed onto navigation stack
+            navigationController!.popViewController(animated: true)
+        }
     }
-    
     
 }
 
