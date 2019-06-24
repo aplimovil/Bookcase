@@ -12,6 +12,7 @@
 		0B7888D322C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7888D222C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift */; };
 		0BA8F26E22C12C020038A28C /* BooksManagerAndController_updateBook_handling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F26D22C12C020038A28C /* BooksManagerAndController_updateBook_handling.swift */; };
 		0BA8F27022C1301E0038A28C /* BooksManagerAndController_removeBook_handling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F26F22C1301E0038A28C /* BooksManagerAndController_removeBook_handling.swift */; };
+		0BA8F27322C134C60038A28C /* BookcaseMedia.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0BA8F27222C134C60038A28C /* BookcaseMedia.zip */; };
 		0BB3D6CA22BE802E00D59545 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D6C922BE802E00D59545 /* BooksTableViewController.swift */; };
 		0BB3D6CE22BE837200D59545 /* BooksTableViewController_rows_handling_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D6CD22BE837200D59545 /* BooksTableViewController_rows_handling_test.swift */; };
 		0BB3D6D022BE893700D59545 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D6CF22BE893700D59545 /* Book.swift */; };
@@ -55,6 +56,7 @@
 		0B7888D222C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_dissmissMe_method_update.swift; sourceTree = "<group>"; };
 		0BA8F26D22C12C020038A28C /* BooksManagerAndController_updateBook_handling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManagerAndController_updateBook_handling.swift; sourceTree = "<group>"; };
 		0BA8F26F22C1301E0038A28C /* BooksManagerAndController_removeBook_handling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManagerAndController_removeBook_handling.swift; sourceTree = "<group>"; };
+		0BA8F27222C134C60038A28C /* BookcaseMedia.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = BookcaseMedia.zip; sourceTree = "<group>"; };
 		0BB3D6C922BE802E00D59545 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
 		0BB3D6CD22BE837200D59545 /* BooksTableViewController_rows_handling_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController_rows_handling_test.swift; sourceTree = "<group>"; };
 		0BB3D6CF22BE893700D59545 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -118,9 +120,18 @@
 			path = crud;
 			sourceTree = "<group>";
 		};
+		0BA8F27122C131FB0038A28C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				0BA8F27222C134C60038A28C /* BookcaseMedia.zip */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		0BB3D6CB22BE82E900D59545 /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				0BA8F27122C131FB0038A28C /* assets */,
 				0B7888CD22C11A9000EEBD4D /* crud */,
 				0BB3D6D922BE975000D59545 /* navigation */,
 				0BB3D6CC22BE82F100D59545 /* tables */,
@@ -314,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9019F851CE229D500CAE744 /* LaunchScreen.storyboard in Resources */,
+				0BA8F27322C134C60038A28C /* BookcaseMedia.zip in Resources */,
 				B9019F821CE229D500CAE744 /* Assets.xcassets in Resources */,
 				B9019F801CE229D500CAE744 /* Main.storyboard in Resources */,
 			);
@@ -527,6 +539,7 @@
 					"\"Snippets/tables/*\"",
 					"\"Snippets/navigation/*\"",
 					"\"Snippets/crud/*\"",
+					"\"Snippets/assets/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -544,6 +557,7 @@
 					"\"Snippets/tables/*\"",
 					"\"Snippets/navigation/*\"",
 					"\"Snippets/crud/*\"",
+					"\"Snippets/assets/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
