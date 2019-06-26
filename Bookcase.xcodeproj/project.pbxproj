@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2E543A22C3CD6900721D5B /* BarcodeViewController_failed_method_update_for_simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E543922C3CD6900721D5B /* BarcodeViewController_failed_method_update_for_simulation.swift */; };
 		0B7888CF22C11CD100EEBD4D /* BookViewController_Book_instance_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7888CE22C11CD100EEBD4D /* BookViewController_Book_instance_addition.swift */; };
 		0B7888D122C122D900EEBD4D /* BooksTableViewController_prepareForSegue_update_for_editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7888D022C122D900EEBD4D /* BooksTableViewController_prepareForSegue_update_for_editing.swift */; };
 		0B7888D322C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7888D222C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift */; };
@@ -31,6 +32,7 @@
 		0BE10B6122C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B6022C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift */; };
 		0BE10B6522C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B6422C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift */; };
 		0BE10B6722C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B6622C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift */; };
+		0BE10B6A22C3B609001A093A /* BarcodeViewController_outlet_and_action_for_simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B6922C3B609001A093A /* BarcodeViewController_outlet_and_action_for_simulation.swift */; };
 		0BEC061722C2610F0099DA47 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC061622C2610F0099DA47 /* BarcodeViewController.swift */; };
 		0BEC061A22C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC061922C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift */; };
 		0BEC061C22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC061B22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift */; };
@@ -61,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2E543922C3CD6900721D5B /* BarcodeViewController_failed_method_update_for_simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_failed_method_update_for_simulation.swift; sourceTree = "<group>"; };
 		0B7888CE22C11CD100EEBD4D /* BookViewController_Book_instance_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_Book_instance_addition.swift; sourceTree = "<group>"; };
 		0B7888D022C122D900EEBD4D /* BooksTableViewController_prepareForSegue_update_for_editing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController_prepareForSegue_update_for_editing.swift; sourceTree = "<group>"; };
 		0B7888D222C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_dissmissMe_method_update.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		0BE10B6022C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_metadataOutput_configuration.swift; sourceTree = "<group>"; };
 		0BE10B6422C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_barcode_reading_handling.swift; sourceTree = "<group>"; };
 		0BE10B6622C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_camera_preview_addition.swift; sourceTree = "<group>"; };
+		0BE10B6922C3B609001A093A /* BarcodeViewController_outlet_and_action_for_simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_outlet_and_action_for_simulation.swift; sourceTree = "<group>"; };
 		0BEC061622C2610F0099DA47 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 		0BEC061922C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_touchCancel_method_addition.swift; sourceTree = "<group>"; };
 		0BEC061B22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		0BB3D6CB22BE82E900D59545 /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				0BE10B6822C3B00B001A093A /* avfoundation-simulator */,
 				0BEC061822C2628B0099DA47 /* avfoundation */,
 				0BA8F27122C131FB0038A28C /* assets */,
 				0B7888CD22C11A9000EEBD4D /* crud */,
@@ -180,6 +185,15 @@
 				0BD56F5622BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift */,
 			);
 			path = navigation;
+			sourceTree = "<group>";
+		};
+		0BE10B6822C3B00B001A093A /* avfoundation-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				0BE10B6922C3B609001A093A /* BarcodeViewController_outlet_and_action_for_simulation.swift */,
+				0B2E543922C3CD6900721D5B /* BarcodeViewController_failed_method_update_for_simulation.swift */,
+			);
+			path = "avfoundation-simulator";
 			sourceTree = "<group>";
 		};
 		0BEC061822C2628B0099DA47 /* avfoundation */ = {
@@ -322,7 +336,6 @@
 				TargetAttributes = {
 					B9019F761CE229D500CAE744 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = L85J7KV5NH;
 						LastSwiftMigration = 1020;
 					};
 					B9019F8A1CE229D500CAE744 = {
@@ -410,9 +423,11 @@
 				0BEC061C22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift in Sources */,
 				0BB3D6CA22BE802E00D59545 /* BooksTableViewController.swift in Sources */,
 				0BA8F27022C1301E0038A28C /* BooksManagerAndController_removeBook_handling.swift in Sources */,
+				0B2E543A22C3CD6900721D5B /* BarcodeViewController_failed_method_update_for_simulation.swift in Sources */,
 				0BB3D6DD22BEA22900D59545 /* BookViewController.swift in Sources */,
 				0BA8F26E22C12C020038A28C /* BooksManagerAndController_updateBook_handling.swift in Sources */,
 				0BB3D6DB22BE979100D59545 /* BookViewController_navigation_methods_definition.swift in Sources */,
+				0BE10B6A22C3B609001A093A /* BarcodeViewController_outlet_and_action_for_simulation.swift in Sources */,
 				0BE10B6522C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift in Sources */,
 				0BEC061722C2610F0099DA47 /* BarcodeViewController.swift in Sources */,
 				0B7888D122C122D900EEBD4D /* BooksTableViewController_prepareForSegue_update_for_editing.swift in Sources */,
@@ -584,13 +599,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L85J7KV5NH;
+				DEVELOPMENT_TEAM = "";
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"\"Snippets/tables/*\"",
 					"\"Snippets/navigation/*\"",
 					"\"Snippets/crud/*\"",
 					"\"Snippets/assets/*\"",
 					"\"Snippets/avfoundation/*\"",
+					"\"Snippets/avfoundation-simulator/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -604,13 +620,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = L85J7KV5NH;
+				DEVELOPMENT_TEAM = "";
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"\"Snippets/tables/*\"",
 					"\"Snippets/navigation/*\"",
 					"\"Snippets/crud/*\"",
 					"\"Snippets/assets/*\"",
 					"\"Snippets/avfoundation/*\"",
+					"\"Snippets/avfoundation-simulator/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

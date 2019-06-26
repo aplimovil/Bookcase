@@ -232,7 +232,29 @@
                     <view key="view" contentMode="scaleToFill" id="C6b-p5-DK2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bg-OH-Xam">
+                                <rect key="frame" x="92.5" y="350.5" width="190" height="30"/>
+                                <state key="normal" title="Simulate Barcode detection"/>
+                                <connections>
+                                    <action selector="touchBarcode:" destination="Hig-hP-D2S" eventType="touchUpInside" id="PUp-v1-iQC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="66v-YS-qd4">
+                                <rect key="frame" x="32" y="312.5" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Bg-OH-Xam" firstAttribute="top" secondItem="66v-YS-qd4" secondAttribute="bottom" constant="8" symbolic="YES" id="Nwa-oX-gb1"/>
+                            <constraint firstItem="jRa-A5-Sxt" firstAttribute="trailing" secondItem="66v-YS-qd4" secondAttribute="trailing" constant="32" id="SpR-TY-Qcu"/>
+                            <constraint firstItem="7Bg-OH-Xam" firstAttribute="centerY" secondItem="jRa-A5-Sxt" secondAttribute="centerY" id="a98-g4-lfN"/>
+                            <constraint firstItem="7Bg-OH-Xam" firstAttribute="centerX" secondItem="jRa-A5-Sxt" secondAttribute="centerX" id="veE-5d-s0W"/>
+                            <constraint firstItem="66v-YS-qd4" firstAttribute="leading" secondItem="jRa-A5-Sxt" secondAttribute="leading" constant="32" id="ywA-TB-8c3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jRa-A5-Sxt"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detect Barcode" id="xJ2-Yj-iXw">
@@ -242,6 +264,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="barcodeTextField" destination="66v-YS-qd4" id="CWK-vC-7HQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSt-SC-gZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

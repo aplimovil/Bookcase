@@ -20,6 +20,9 @@ class BarcodeViewController: UIViewController {
     //Defines a PreviewLayer object to display the camera capture in the screen
     var previewLayer: AVCaptureVideoPreviewLayer!
     
+    //Outlet of barcode Textfield for simulation purposes
+    @IBOutlet weak var barcodeTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Define the default capture type of content, in this case a video from the camera
@@ -75,14 +78,22 @@ class BarcodeViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func touchBarcode(_ sender: UIButton) {
+        //Sets the barcode textfield content on the navigation Delegate for simulation purposes
+        delegate?.foundBarcode(barcode: barcodeTextField.text!)
+        dismiss(animated: true, completion: nil)
+    }
+    
     func failed() {
         //Shows an Alert if there was an error during the camera setup for capture purposes
         let ac = UIAlertController(title: "Barcode detection not supported",
                                    message: "Your device doesn't support barcode detection.",
                                    preferredStyle: .alert)
-        let alert = UIAlertAction(title: "OK", style: .default) { (action) in
+        let alert = UIAlertAction(title: "OK", style: .default)
+            /*
+        { (action) in
             self.dismiss(animated: true, completion: nil)
-        }
+        }*/
         ac.addAction(alert)
         present(ac, animated: true, completion: nil)
     }
