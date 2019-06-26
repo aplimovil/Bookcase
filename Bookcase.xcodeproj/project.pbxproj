@@ -25,6 +25,16 @@
 		0BD56F5322BEA5E900669D09 /* BookViewController_BookViewControllerDelegate_protocol_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD56F5222BEA5E900669D09 /* BookViewController_BookViewControllerDelegate_protocol_definition.swift */; };
 		0BD56F5522BEA90500669D09 /* BookViewController_form_outlets_and_touch_save_method_update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD56F5422BEA90500669D09 /* BookViewController_form_outlets_and_touch_save_method_update.swift */; };
 		0BD56F5722BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD56F5622BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift */; };
+		0BE10B5B22C39786001A093A /* BarcodeViewController_AVCaptureSession_setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B5A22C39786001A093A /* BarcodeViewController_AVCaptureSession_setup.swift */; };
+		0BE10B5D22C3999C001A093A /* BarcodeViewController_CaptureDeviceInput_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B5C22C3999C001A093A /* BarcodeViewController_CaptureDeviceInput_definition.swift */; };
+		0BE10B5F22C39B4D001A093A /* BarcodeViewController_CaptureSession_input_connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B5E22C39B4D001A093A /* BarcodeViewController_CaptureSession_input_connection.swift */; };
+		0BE10B6122C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B6022C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift */; };
+		0BE10B6522C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B6422C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift */; };
+		0BE10B6722C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE10B6622C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift */; };
+		0BEC061722C2610F0099DA47 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC061622C2610F0099DA47 /* BarcodeViewController.swift */; };
+		0BEC061A22C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC061922C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift */; };
+		0BEC061C22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC061B22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift */; };
+		0BEC061E22C266D90099DA47 /* BookViewController_delegate_handling_barcode_notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEC061D22C266D90099DA47 /* BookViewController_delegate_handling_barcode_notification.swift */; };
 		B9019F7B1CE229D500CAE744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9019F7A1CE229D500CAE744 /* AppDelegate.swift */; };
 		B9019F801CE229D500CAE744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9019F7E1CE229D500CAE744 /* Main.storyboard */; };
 		B9019F821CE229D500CAE744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9019F811CE229D500CAE744 /* Assets.xcassets */; };
@@ -69,6 +79,16 @@
 		0BD56F5222BEA5E900669D09 /* BookViewController_BookViewControllerDelegate_protocol_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_BookViewControllerDelegate_protocol_definition.swift; sourceTree = "<group>"; };
 		0BD56F5422BEA90500669D09 /* BookViewController_form_outlets_and_touch_save_method_update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_form_outlets_and_touch_save_method_update.swift; sourceTree = "<group>"; };
 		0BD56F5622BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift; sourceTree = "<group>"; };
+		0BE10B5A22C39786001A093A /* BarcodeViewController_AVCaptureSession_setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_AVCaptureSession_setup.swift; sourceTree = "<group>"; };
+		0BE10B5C22C3999C001A093A /* BarcodeViewController_CaptureDeviceInput_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_CaptureDeviceInput_definition.swift; sourceTree = "<group>"; };
+		0BE10B5E22C39B4D001A093A /* BarcodeViewController_CaptureSession_input_connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_CaptureSession_input_connection.swift; sourceTree = "<group>"; };
+		0BE10B6022C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_metadataOutput_configuration.swift; sourceTree = "<group>"; };
+		0BE10B6422C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_barcode_reading_handling.swift; sourceTree = "<group>"; };
+		0BE10B6622C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_camera_preview_addition.swift; sourceTree = "<group>"; };
+		0BEC061622C2610F0099DA47 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		0BEC061922C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_touchCancel_method_addition.swift; sourceTree = "<group>"; };
+		0BEC061B22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift; sourceTree = "<group>"; };
+		0BEC061D22C266D90099DA47 /* BookViewController_delegate_handling_barcode_notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_delegate_handling_barcode_notification.swift; sourceTree = "<group>"; };
 		B9019F771CE229D500CAE744 /* Bookcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9019F7A1CE229D500CAE744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9019F7F1CE229D500CAE744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,6 +151,7 @@
 		0BB3D6CB22BE82E900D59545 /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				0BEC061822C2628B0099DA47 /* avfoundation */,
 				0BA8F27122C131FB0038A28C /* assets */,
 				0B7888CD22C11A9000EEBD4D /* crud */,
 				0BB3D6D922BE975000D59545 /* navigation */,
@@ -159,6 +180,22 @@
 				0BD56F5622BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift */,
 			);
 			path = navigation;
+			sourceTree = "<group>";
+		};
+		0BEC061822C2628B0099DA47 /* avfoundation */ = {
+			isa = PBXGroup;
+			children = (
+				0BEC061922C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift */,
+				0BEC061B22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift */,
+				0BEC061D22C266D90099DA47 /* BookViewController_delegate_handling_barcode_notification.swift */,
+				0BE10B5A22C39786001A093A /* BarcodeViewController_AVCaptureSession_setup.swift */,
+				0BE10B5C22C3999C001A093A /* BarcodeViewController_CaptureDeviceInput_definition.swift */,
+				0BE10B5E22C39B4D001A093A /* BarcodeViewController_CaptureSession_input_connection.swift */,
+				0BE10B6022C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift */,
+				0BE10B6422C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift */,
+				0BE10B6622C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift */,
+			);
+			path = avfoundation;
 			sourceTree = "<group>";
 		};
 		B9019F6E1CE229D500CAE744 = {
@@ -194,6 +231,7 @@
 				0BB3D6CF22BE893700D59545 /* Book.swift */,
 				0BB3D6D322BE8A1600D59545 /* BooksManager.swift */,
 				0BB3D6DC22BEA22900D59545 /* BookViewController.swift */,
+				0BEC061622C2610F0099DA47 /* BarcodeViewController.swift */,
 			);
 			path = Bookcase;
 			sourceTree = "<group>";
@@ -284,6 +322,7 @@
 				TargetAttributes = {
 					B9019F761CE229D500CAE744 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = L85J7KV5NH;
 						LastSwiftMigration = 1020;
 					};
 					B9019F8A1CE229D500CAE744 = {
@@ -354,22 +393,32 @@
 			files = (
 				0BB3D6D822BE8E6700D59545 /* BooksTableViewController_cell_content_definition.swift in Sources */,
 				0BB3D6D222BE89C200D59545 /* Book_model_definition.swift in Sources */,
+				0BE10B5F22C39B4D001A093A /* BarcodeViewController_CaptureSession_input_connection.swift in Sources */,
 				0BD56F5322BEA5E900669D09 /* BookViewController_BookViewControllerDelegate_protocol_definition.swift in Sources */,
 				B9019F7B1CE229D500CAE744 /* AppDelegate.swift in Sources */,
+				0BEC061A22C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift in Sources */,
+				0BE10B6122C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift in Sources */,
 				0BB3D6CE22BE837200D59545 /* BooksTableViewController_rows_handling_test.swift in Sources */,
 				0BD56F5522BEA90500669D09 /* BookViewController_form_outlets_and_touch_save_method_update.swift in Sources */,
+				0BE10B6722C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift in Sources */,
 				0BB3D6D622BE8B7D00D59545 /* BooksManager_class_definition.swift in Sources */,
+				0BE10B5B22C39786001A093A /* BarcodeViewController_AVCaptureSession_setup.swift in Sources */,
 				0B7888CF22C11CD100EEBD4D /* BookViewController_Book_instance_addition.swift in Sources */,
 				0B7888D322C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift in Sources */,
 				0BB3D6D022BE893700D59545 /* Book.swift in Sources */,
 				0BD56F5722BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift in Sources */,
+				0BEC061C22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift in Sources */,
 				0BB3D6CA22BE802E00D59545 /* BooksTableViewController.swift in Sources */,
 				0BA8F27022C1301E0038A28C /* BooksManagerAndController_removeBook_handling.swift in Sources */,
 				0BB3D6DD22BEA22900D59545 /* BookViewController.swift in Sources */,
 				0BA8F26E22C12C020038A28C /* BooksManagerAndController_updateBook_handling.swift in Sources */,
 				0BB3D6DB22BE979100D59545 /* BookViewController_navigation_methods_definition.swift in Sources */,
+				0BE10B6522C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift in Sources */,
+				0BEC061722C2610F0099DA47 /* BarcodeViewController.swift in Sources */,
 				0B7888D122C122D900EEBD4D /* BooksTableViewController_prepareForSegue_update_for_editing.swift in Sources */,
 				0BB3D6D422BE8A1600D59545 /* BooksManager.swift in Sources */,
+				0BE10B5D22C3999C001A093A /* BarcodeViewController_CaptureDeviceInput_definition.swift in Sources */,
+				0BEC061E22C266D90099DA47 /* BookViewController_delegate_handling_barcode_notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,15 +584,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L85J7KV5NH;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"\"Snippets/tables/*\"",
 					"\"Snippets/navigation/*\"",
 					"\"Snippets/crud/*\"",
 					"\"Snippets/assets/*\"",
+					"\"Snippets/avfoundation/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.interactivecoconut.Bookcase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aplimovil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -553,15 +604,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L85J7KV5NH;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"\"Snippets/tables/*\"",
 					"\"Snippets/navigation/*\"",
 					"\"Snippets/crud/*\"",
 					"\"Snippets/assets/*\"",
+					"\"Snippets/avfoundation/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.interactivecoconut.Bookcase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aplimovil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;

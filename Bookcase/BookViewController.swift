@@ -76,6 +76,17 @@ class BookViewController: UIViewController {
         }
     }
     
+    //Prepare the navigation to BarcodeViewController scene
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Get a reference of BarcodeViewController from the Navigation Controller stack
+        if let navigationController = segue.destination as? UINavigationController,
+            let barcodeViewController = navigationController.topViewController as? BarcodeViewController {
+            //Confirm the BookViewController as delegate of BarcodeViewController
+            barcodeViewController.delegate = self
+        }
+    }
+    
+    
 }
 
 /*Defines a Delegate protocol for navigation purposes
@@ -83,5 +94,13 @@ class BookViewController: UIViewController {
  a book object to the delegate ready for saving*/
 protocol BookViewControllerDelegate {
     func saveBook(_ book: Book)
+}
+
+//Define a extension that enables BookViewController may act as Delegate for BarcodeViewController
+extension BookViewController:BarcodeViewControllerDelegate {
+    func foundBarcode(barcode:String) {
+        //When the barcode is received, the ISBN field is updated
+        isbnTextField.text = barcode
+    }
 }
 
