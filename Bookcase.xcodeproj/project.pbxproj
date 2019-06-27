@@ -22,6 +22,9 @@
 		0BB3D6D822BE8E6700D59545 /* BooksTableViewController_cell_content_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D6D722BE8E6700D59545 /* BooksTableViewController_cell_content_definition.swift */; };
 		0BB3D6DB22BE979100D59545 /* BookViewController_navigation_methods_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D6DA22BE979100D59545 /* BookViewController_navigation_methods_definition.swift */; };
 		0BB3D6DD22BEA22900D59545 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D6DC22BEA22900D59545 /* BookViewController.swift */; };
+		0BB3FD8122C51BDC00750D99 /* BookViewController_infoButton_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3FD8022C51BDC00750D99 /* BookViewController_infoButton_addition.swift */; };
+		0BB3FD8322C51FEB00750D99 /* BookViewController_toogleISBN_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3FD8222C51FEB00750D99 /* BookViewController_toogleISBN_method_addition.swift */; };
+		0BB3FD8522C5215E00750D99 /* BookViewController_userdefaults_reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3FD8422C5215E00750D99 /* BookViewController_userdefaults_reading.swift */; };
 		0BD56F5322BEA5E900669D09 /* BookViewController_BookViewControllerDelegate_protocol_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD56F5222BEA5E900669D09 /* BookViewController_BookViewControllerDelegate_protocol_definition.swift */; };
 		0BD56F5522BEA90500669D09 /* BookViewController_form_outlets_and_touch_save_method_update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD56F5422BEA90500669D09 /* BookViewController_form_outlets_and_touch_save_method_update.swift */; };
 		0BD56F5722BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD56F5622BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift */; };
@@ -76,6 +79,9 @@
 		0BB3D6D722BE8E6700D59545 /* BooksTableViewController_cell_content_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController_cell_content_definition.swift; sourceTree = "<group>"; };
 		0BB3D6DA22BE979100D59545 /* BookViewController_navigation_methods_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_navigation_methods_definition.swift; sourceTree = "<group>"; };
 		0BB3D6DC22BEA22900D59545 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		0BB3FD8022C51BDC00750D99 /* BookViewController_infoButton_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_infoButton_addition.swift; sourceTree = "<group>"; };
+		0BB3FD8222C51FEB00750D99 /* BookViewController_toogleISBN_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_toogleISBN_method_addition.swift; sourceTree = "<group>"; };
+		0BB3FD8422C5215E00750D99 /* BookViewController_userdefaults_reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_userdefaults_reading.swift; sourceTree = "<group>"; };
 		0BD56F5222BEA5E900669D09 /* BookViewController_BookViewControllerDelegate_protocol_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_BookViewControllerDelegate_protocol_definition.swift; sourceTree = "<group>"; };
 		0BD56F5422BEA90500669D09 /* BookViewController_form_outlets_and_touch_save_method_update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_form_outlets_and_touch_save_method_update.swift; sourceTree = "<group>"; };
 		0BD56F5622BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 		0BB3D6CB22BE82E900D59545 /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				0BB3FD7F22C51BA400750D99 /* userdefaults */,
 				0BEC061822C2628B0099DA47 /* avfoundation */,
 				0BA8F27122C131FB0038A28C /* assets */,
 				0B7888CD22C11A9000EEBD4D /* crud */,
@@ -180,6 +187,16 @@
 				0BD56F5622BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift */,
 			);
 			path = navigation;
+			sourceTree = "<group>";
+		};
+		0BB3FD7F22C51BA400750D99 /* userdefaults */ = {
+			isa = PBXGroup;
+			children = (
+				0BB3FD8022C51BDC00750D99 /* BookViewController_infoButton_addition.swift */,
+				0BB3FD8222C51FEB00750D99 /* BookViewController_toogleISBN_method_addition.swift */,
+				0BB3FD8422C5215E00750D99 /* BookViewController_userdefaults_reading.swift */,
+			);
+			path = userdefaults;
 			sourceTree = "<group>";
 		};
 		0BEC061822C2628B0099DA47 /* avfoundation */ = {
@@ -397,14 +414,17 @@
 				0BD56F5322BEA5E900669D09 /* BookViewController_BookViewControllerDelegate_protocol_definition.swift in Sources */,
 				B9019F7B1CE229D500CAE744 /* AppDelegate.swift in Sources */,
 				0BEC061A22C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift in Sources */,
+				0BB3FD8322C51FEB00750D99 /* BookViewController_toogleISBN_method_addition.swift in Sources */,
 				0BE10B6122C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift in Sources */,
 				0BB3D6CE22BE837200D59545 /* BooksTableViewController_rows_handling_test.swift in Sources */,
 				0BD56F5522BEA90500669D09 /* BookViewController_form_outlets_and_touch_save_method_update.swift in Sources */,
+				0BB3FD8522C5215E00750D99 /* BookViewController_userdefaults_reading.swift in Sources */,
 				0BE10B6722C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift in Sources */,
 				0BB3D6D622BE8B7D00D59545 /* BooksManager_class_definition.swift in Sources */,
 				0BE10B5B22C39786001A093A /* BarcodeViewController_AVCaptureSession_setup.swift in Sources */,
 				0B7888CF22C11CD100EEBD4D /* BookViewController_Book_instance_addition.swift in Sources */,
 				0B7888D322C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift in Sources */,
+				0BB3FD8122C51BDC00750D99 /* BookViewController_infoButton_addition.swift in Sources */,
 				0BB3D6D022BE893700D59545 /* Book.swift in Sources */,
 				0BD56F5722BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift in Sources */,
 				0BEC061C22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift in Sources */,
@@ -591,6 +611,7 @@
 					"\"Snippets/crud/*\"",
 					"\"Snippets/assets/*\"",
 					"\"Snippets/avfoundation/*\"",
+					"\"Snippets/userdefaults/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -611,6 +632,7 @@
 					"\"Snippets/crud/*\"",
 					"\"Snippets/assets/*\"",
 					"\"Snippets/avfoundation/*\"",
+					"\"Snippets/userdefaults/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

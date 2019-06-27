@@ -216,6 +216,7 @@
                     <connections>
                         <outlet property="authorTextField" destination="K59-gg-5ay" id="1lx-0o-b1b"/>
                         <outlet property="bookCover" destination="7xl-eQ-ZGX" id="bo5-YR-4KC"/>
+                        <outlet property="isbnLabel" destination="7xD-G9-wUt" id="Rbp-nJ-1KK"/>
                         <outlet property="isbnTextField" destination="3Kb-7q-OTH" id="aPU-Yg-vXg"/>
                         <outlet property="notesTextField" destination="vSH-XD-HqM" id="bBT-tA-IdY"/>
                         <outlet property="titleTextField" destination="o4g-or-ufm" id="LAC-AU-Gmc"/>

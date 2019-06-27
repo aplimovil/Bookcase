@@ -13,12 +13,15 @@ class BookViewController: UIViewController {
     var delegate: BookViewControllerDelegate?
     //Object to hold a Book instance
     var book: Book?
+    //Key name for storing the ISBN visibility user preference
+    private let isbnKey = "ISBN"
     //IBOutlets for book form fields
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var authorTextField: UITextField!
     @IBOutlet weak var notesTextField: UITextView!
     @IBOutlet weak var bookCover: UIImageView!
     @IBOutlet weak var isbnTextField: UITextField!
+    @IBOutlet weak var isbnLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -33,7 +36,17 @@ class BookViewController: UIViewController {
             notesTextField.text = book.notes
             navigationItem.title = "Edit book"
         }
-        
+        //Add a Info Button inside the BookCover imageView
+        let infoButton = UIButton(type: .infoLight)
+        bookCover.addSubview(infoButton)
+        //Defines a toogleISBN method to handle the touchUpInside event from the button
+        infoButton.addTarget(self,
+                             action: #selector(toggleISBN),
+                             for: .touchUpInside)
+        //Makes the ISBN label and textfield visibles according to the user preference
+        //stored in the UserDefaults object
+        isbnTextField.isHidden = UserDefaults.standard.bool(forKey: isbnKey)
+        isbnLabel.isHidden = UserDefaults.standard.bool(forKey: isbnKey)
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,6 +98,20 @@ class BookViewController: UIViewController {
             barcodeViewController.delegate = self
         }
     }
+    
+    //Method to handle the infoButton event to store the user preference about
+    //to make the ISBN field visible
+    @objc func toggleISBN() {
+        UIView.animate(withDuration: 0.5, animations: {
+            //Makes the ISBN label and textfield visible or hidden when user touches the button
+            self.isbnTextField.isHidden = !self.isbnTextField.isHidden
+            self.isbnLabel.isHidden = !self.isbnLabel.isHidden
+        })
+        //Saves the ISBN visibility preference in the UserDefaults object using the key defined
+        //in the variables declaration
+        UserDefaults.standard.set(isbnTextField.isHidden, forKey: isbnKey)
+    }
+    
     
     
 }
