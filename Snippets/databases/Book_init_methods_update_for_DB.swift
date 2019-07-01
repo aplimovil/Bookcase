@@ -1,42 +1,16 @@
 //
-//  Book.swift
+//  Book_init_methods_update_for_DB.swift
 //  Bookcase
 //
-//  Created by Francisco Martinez on 6/22/19.
+//  Created by Francisco Martinez on 7/1/19.
 //  Copyright © 2019 Craig Grummitt. All rights reserved.
 //
 
-import UIKit
-
-//Internal struct for FMDB database handling
-internal struct Key {
-    static let title = "title"
-    static let author = "author"
-    static let rating = "rating"
-    static let isbn = "isbn"
-    static let notes = "notes"
-}
+import Foundation
 
 struct Book {
-    //Defines the properties for each Book in the collection
-    static let defaultCover = UIImage(named: "book.jpg")!
-    var title:String
-    var author:String
-    var rating:Double
-    var isbn:String
-    var notes:String
-    //Id from database
-    var id:Int
-    //Use a default cover if none is set
-    var cover:UIImage {
-        get {
-            return image ?? Book.defaultCover
-        }
-        set {
-            image = newValue
-        }
-    }
-    private var image:UIImage? = nil
+    
+    /******************************************* Update this code **********************************************/
     
     //Update initializer for including id field from Books database
     init(title:String,author:String,rating:Double,isbn:String,notes:String,id:Int? = nil,cover:UIImage? = nil) {
@@ -48,6 +22,11 @@ struct Book {
         self.id = id ?? -1
         self.image = cover
     }
+    
+    /******************************************* Update this code **********************************************/
+    
+    
+    /********************************************* Add this code ***********************************************/
     
     //Initializer for getting a new Book instance from a FMDB ResultSet object
     init?(rs:FMResultSet) {
@@ -66,4 +45,7 @@ struct Book {
                   id:Int(id)
         )
     }
+    
+    /********************************************* Add this code ***********************************************/
+
 }

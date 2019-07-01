@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B76AC0522CA400E00E853BD /* Books.db in Resources */ = {isa = PBXBuildFile; fileRef = 0B76AC0422CA400E00E853BD /* Books.db */; };
+		0B76AC0722CA422F00E853BD /* BooksManager_database_path_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC0622CA422F00E853BD /* BooksManager_database_path_definition.swift */; };
+		0B76AC0A22CA447200E853BD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B76AC0922CA447200E853BD /* libsqlite3.tbd */; };
+		0B76AC1822CA44EE00E853BD /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC0D22CA44ED00E853BD /* FMDatabasePool.m */; };
+		0B76AC1922CA44EE00E853BD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC0F22CA44EE00E853BD /* FMDatabaseAdditions.m */; };
+		0B76AC1A22CA44EE00E853BD /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC1122CA44EE00E853BD /* FMDatabaseQueue.m */; };
+		0B76AC1B22CA44EE00E853BD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC1622CA44EE00E853BD /* FMResultSet.m */; };
+		0B76AC1C22CA44EE00E853BD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC1722CA44EE00E853BD /* FMDatabase.m */; };
+		0B76AC1F22CA478400E853BD /* BooksManager_getOpenDB_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC1E22CA478400E853BD /* BooksManager_getOpenDB_method_addition.swift */; };
+		0B76AC2122CA496500E853BD /* Book_init_methods_update_for_DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC2022CA496500E853BD /* Book_init_methods_update_for_DB.swift */; };
+		0B76AC2322CA4AB000E853BD /* Book_struct_update_for_DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC2222CA4AB000E853BD /* Book_struct_update_for_DB.swift */; };
+		0B76AC2522CA4EC600E853BD /* BooksManager_retrieveBooks_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC2422CA4EC600E853BD /* BooksManager_retrieveBooks_method_addition.swift */; };
+		0B76AC2722CA533800E853BD /* BooksManager_SQLAddBook_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC2622CA533800E853BD /* BooksManager_SQLAddBook_method_addition.swift */; };
+		0B76AC2922CA576F00E853BD /* BooksManager_SQLRemove_UpdateBook_methods_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC2822CA576F00E853BD /* BooksManager_SQLRemove_UpdateBook_methods_addition.swift */; };
+		0B76AC2B22CA58BD00E853BD /* BookViewController_touchSave_method_update_for_db.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76AC2A22CA58BD00E853BD /* BookViewController_touchSave_method_update_for_db.swift */; };
 		0B7888CF22C11CD100EEBD4D /* BookViewController_Book_instance_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7888CE22C11CD100EEBD4D /* BookViewController_Book_instance_addition.swift */; };
 		0B7888D122C122D900EEBD4D /* BooksTableViewController_prepareForSegue_update_for_editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7888D022C122D900EEBD4D /* BooksTableViewController_prepareForSegue_update_for_editing.swift */; };
 		0B7888D322C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7888D222C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift */; };
@@ -64,6 +79,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B76AC0322CA3F4100E853BD /* Books.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Books.db; sourceTree = "<group>"; };
+		0B76AC0422CA400E00E853BD /* Books.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Books.db; sourceTree = "<group>"; };
+		0B76AC0622CA422F00E853BD /* BooksManager_database_path_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager_database_path_definition.swift; sourceTree = "<group>"; };
+		0B76AC0922CA447200E853BD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0B76AC0C22CA44ED00E853BD /* Bookcase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bookcase-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B76AC0D22CA44ED00E853BD /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		0B76AC0E22CA44EE00E853BD /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		0B76AC0F22CA44EE00E853BD /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		0B76AC1022CA44EE00E853BD /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		0B76AC1122CA44EE00E853BD /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		0B76AC1222CA44EE00E853BD /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		0B76AC1322CA44EE00E853BD /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		0B76AC1422CA44EE00E853BD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		0B76AC1522CA44EE00E853BD /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		0B76AC1622CA44EE00E853BD /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		0B76AC1722CA44EE00E853BD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		0B76AC1D22CA463C00E853BD /* Bookcase-Bridging-Header_FMDB_header_import.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bookcase-Bridging-Header_FMDB_header_import.h"; sourceTree = "<group>"; };
+		0B76AC1E22CA478400E853BD /* BooksManager_getOpenDB_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager_getOpenDB_method_addition.swift; sourceTree = "<group>"; };
+		0B76AC2022CA496500E853BD /* Book_init_methods_update_for_DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_init_methods_update_for_DB.swift; sourceTree = "<group>"; };
+		0B76AC2222CA4AB000E853BD /* Book_struct_update_for_DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_struct_update_for_DB.swift; sourceTree = "<group>"; };
+		0B76AC2422CA4EC600E853BD /* BooksManager_retrieveBooks_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager_retrieveBooks_method_addition.swift; sourceTree = "<group>"; };
+		0B76AC2622CA533800E853BD /* BooksManager_SQLAddBook_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager_SQLAddBook_method_addition.swift; sourceTree = "<group>"; };
+		0B76AC2822CA576F00E853BD /* BooksManager_SQLRemove_UpdateBook_methods_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksManager_SQLRemove_UpdateBook_methods_addition.swift; sourceTree = "<group>"; };
+		0B76AC2A22CA58BD00E853BD /* BookViewController_touchSave_method_update_for_db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_touchSave_method_update_for_db.swift; sourceTree = "<group>"; };
 		0B7888CE22C11CD100EEBD4D /* BookViewController_Book_instance_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_Book_instance_addition.swift; sourceTree = "<group>"; };
 		0B7888D022C122D900EEBD4D /* BooksTableViewController_prepareForSegue_update_for_editing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController_prepareForSegue_update_for_editing.swift; sourceTree = "<group>"; };
 		0B7888D222C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_dissmissMe_method_update.swift; sourceTree = "<group>"; };
@@ -114,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B76AC0A22CA447200E853BD /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +174,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B76AC0222CA3E9A00E853BD /* databases */ = {
+			isa = PBXGroup;
+			children = (
+				0B76AC0322CA3F4100E853BD /* Books.db */,
+				0B76AC0622CA422F00E853BD /* BooksManager_database_path_definition.swift */,
+				0B76AC1D22CA463C00E853BD /* Bookcase-Bridging-Header_FMDB_header_import.h */,
+				0B76AC1E22CA478400E853BD /* BooksManager_getOpenDB_method_addition.swift */,
+				0B76AC2022CA496500E853BD /* Book_init_methods_update_for_DB.swift */,
+				0B76AC2222CA4AB000E853BD /* Book_struct_update_for_DB.swift */,
+				0B76AC2422CA4EC600E853BD /* BooksManager_retrieveBooks_method_addition.swift */,
+				0B76AC2622CA533800E853BD /* BooksManager_SQLAddBook_method_addition.swift */,
+				0B76AC2822CA576F00E853BD /* BooksManager_SQLRemove_UpdateBook_methods_addition.swift */,
+				0B76AC2A22CA58BD00E853BD /* BookViewController_touchSave_method_update_for_db.swift */,
+			);
+			path = databases;
+			sourceTree = "<group>";
+		};
+		0B76AC0822CA447100E853BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B76AC0922CA447200E853BD /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B76AC0B22CA44D300E853BD /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				0B76AC1422CA44EE00E853BD /* FMDatabase.h */,
+				0B76AC1722CA44EE00E853BD /* FMDatabase.m */,
+				0B76AC1322CA44EE00E853BD /* FMDatabaseAdditions.h */,
+				0B76AC0F22CA44EE00E853BD /* FMDatabaseAdditions.m */,
+				0B76AC0E22CA44EE00E853BD /* FMDatabasePool.h */,
+				0B76AC0D22CA44ED00E853BD /* FMDatabasePool.m */,
+				0B76AC1022CA44EE00E853BD /* FMDatabaseQueue.h */,
+				0B76AC1122CA44EE00E853BD /* FMDatabaseQueue.m */,
+				0B76AC1222CA44EE00E853BD /* FMDB.h */,
+				0B76AC1522CA44EE00E853BD /* FMResultSet.h */,
+				0B76AC1622CA44EE00E853BD /* FMResultSet.m */,
+				0B76AC0C22CA44ED00E853BD /* Bookcase-Bridging-Header.h */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		0B7888CD22C11A9000EEBD4D /* crud */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +241,7 @@
 		0BB3D6CB22BE82E900D59545 /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				0B76AC0222CA3E9A00E853BD /* databases */,
 				0BB3FD7F22C51BA400750D99 /* userdefaults */,
 				0BEC061822C2628B0099DA47 /* avfoundation */,
 				0BA8F27122C131FB0038A28C /* assets */,
@@ -223,6 +308,7 @@
 				B9019F8E1CE229D500CAE744 /* BookcaseTests */,
 				B9019F991CE229D500CAE744 /* BookcaseUITests */,
 				B9019F781CE229D500CAE744 /* Products */,
+				0B76AC0822CA447100E853BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,6 +325,8 @@
 		B9019F791CE229D500CAE744 /* Bookcase */ = {
 			isa = PBXGroup;
 			children = (
+				0B76AC0B22CA44D300E853BD /* fmdb */,
+				0B76AC0422CA400E00E853BD /* Books.db */,
 				B9019F7A1CE229D500CAE744 /* AppDelegate.swift */,
 				B9019F7E1CE229D500CAE744 /* Main.storyboard */,
 				B9019F811CE229D500CAE744 /* Assets.xcassets */,
@@ -340,7 +428,7 @@
 					B9019F761CE229D500CAE744 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = L85J7KV5NH;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1010;
 					};
 					B9019F8A1CE229D500CAE744 = {
 						CreatedOnToolsVersion = 7.3;
@@ -383,6 +471,7 @@
 				B9019F851CE229D500CAE744 /* LaunchScreen.storyboard in Resources */,
 				0BA8F27322C134C60038A28C /* BookcaseMedia.zip in Resources */,
 				B9019F821CE229D500CAE744 /* Assets.xcassets in Resources */,
+				0B76AC0522CA400E00E853BD /* Books.db in Resources */,
 				B9019F801CE229D500CAE744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,19 +503,32 @@
 				0BD56F5322BEA5E900669D09 /* BookViewController_BookViewControllerDelegate_protocol_definition.swift in Sources */,
 				B9019F7B1CE229D500CAE744 /* AppDelegate.swift in Sources */,
 				0BEC061A22C262CC0099DA47 /* BarcodeViewController_touchCancel_method_addition.swift in Sources */,
+				0B76AC2B22CA58BD00E853BD /* BookViewController_touchSave_method_update_for_db.swift in Sources */,
+				0B76AC1B22CA44EE00E853BD /* FMResultSet.m in Sources */,
 				0BB3FD8322C51FEB00750D99 /* BookViewController_toogleISBN_method_addition.swift in Sources */,
+				0B76AC2522CA4EC600E853BD /* BooksManager_retrieveBooks_method_addition.swift in Sources */,
+				0B76AC1F22CA478400E853BD /* BooksManager_getOpenDB_method_addition.swift in Sources */,
+				0B76AC2122CA496500E853BD /* Book_init_methods_update_for_DB.swift in Sources */,
+				0B76AC0722CA422F00E853BD /* BooksManager_database_path_definition.swift in Sources */,
 				0BE10B6122C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift in Sources */,
 				0BB3D6CE22BE837200D59545 /* BooksTableViewController_rows_handling_test.swift in Sources */,
+				0B76AC1A22CA44EE00E853BD /* FMDatabaseQueue.m in Sources */,
 				0BD56F5522BEA90500669D09 /* BookViewController_form_outlets_and_touch_save_method_update.swift in Sources */,
 				0BB3FD8522C5215E00750D99 /* BookViewController_userdefaults_reading.swift in Sources */,
 				0BE10B6722C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift in Sources */,
+				0B76AC1C22CA44EE00E853BD /* FMDatabase.m in Sources */,
 				0BB3D6D622BE8B7D00D59545 /* BooksManager_class_definition.swift in Sources */,
 				0BE10B5B22C39786001A093A /* BarcodeViewController_AVCaptureSession_setup.swift in Sources */,
+				0B76AC2722CA533800E853BD /* BooksManager_SQLAddBook_method_addition.swift in Sources */,
 				0B7888CF22C11CD100EEBD4D /* BookViewController_Book_instance_addition.swift in Sources */,
+				0B76AC2922CA576F00E853BD /* BooksManager_SQLRemove_UpdateBook_methods_addition.swift in Sources */,
+				0B76AC1822CA44EE00E853BD /* FMDatabasePool.m in Sources */,
+				0B76AC2322CA4AB000E853BD /* Book_struct_update_for_DB.swift in Sources */,
 				0B7888D322C129E100EEBD4D /* BookViewController_dissmissMe_method_update.swift in Sources */,
 				0BB3FD8122C51BDC00750D99 /* BookViewController_infoButton_addition.swift in Sources */,
 				0BB3D6D022BE893700D59545 /* Book.swift in Sources */,
 				0BD56F5722BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift in Sources */,
+				0B76AC1922CA44EE00E853BD /* FMDatabaseAdditions.m in Sources */,
 				0BEC061C22C2641A0099DA47 /* BarcodeViewController_BarcodeViewControllerDelegate_protocol_addition.swift in Sources */,
 				0BB3D6CA22BE802E00D59545 /* BooksTableViewController.swift in Sources */,
 				0BA8F27022C1301E0038A28C /* BooksManagerAndController_removeBook_handling.swift in Sources */,
@@ -604,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L85J7KV5NH;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"\"Snippets/tables/*\"",
@@ -612,11 +715,14 @@
 					"\"Snippets/assets/*\"",
 					"\"Snippets/avfoundation/*\"",
 					"\"Snippets/userdefaults/*\"",
+					"\"Snippets/databases/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aplimovil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bookcase/fmdb/Bookcase-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -625,6 +731,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L85J7KV5NH;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"\"Snippets/tables/*\"",
@@ -633,11 +740,13 @@
 					"\"Snippets/assets/*\"",
 					"\"Snippets/avfoundation/*\"",
 					"\"Snippets/userdefaults/*\"",
+					"\"Snippets/databases/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aplimovil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bookcase/fmdb/Bookcase-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 			};

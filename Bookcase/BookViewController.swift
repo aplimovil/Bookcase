@@ -60,8 +60,9 @@ class BookViewController: UIViewController {
         let bookToSave = Book(title: titleTextField.text!,
                               author: authorTextField.text!,
                               rating: 3,
-                              isbn: "",
+                              isbn: isbnTextField.text!,
                               notes: notesTextField.text!,
+                              id:book?.id,
                               cover: bookCover.image
         )
         //Deliver the book to the BookViewControllerDelegate object to be sent to the next scene
