@@ -15,6 +15,8 @@ class BookViewController: UIViewController {
     var book: Book?
     //Key name for storing the ISBN visibility user preference
     private let isbnKey = "ISBN"
+    //BoogleBooksService object to handle Google WS communication
+    var booksService: BooksService = GoogleBooksService()
     //IBOutlets for book form fields
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var authorTextField: UITextField!
@@ -113,7 +115,19 @@ class BookViewController: UIViewController {
         UserDefaults.standard.set(isbnTextField.isHidden, forKey: isbnKey)
     }
     
+    //Connects to Google Books WS to get Book Info from a scanned ISBN
+    /*The closure including the completionHandler will notify to BookViewController when service
+     invocation has finished. As long as it will be called from an asynchronous operation,
+     it needs to be defined as @escaping*/
+    func getBook(with barcode: String,
+                 completionHandler: @escaping (Book?, Error?) -> Void) {
+        // Get book from web service
+    }
     
+    //Cancels WS communication operations
+    func cancel() {
+        // Cancel any web service operations
+    }
     
 }
 
@@ -127,8 +141,22 @@ protocol BookViewControllerDelegate {
 //Define a extension that enables BookViewController may act as Delegate for BarcodeViewController
 extension BookViewController:BarcodeViewControllerDelegate {
     func foundBarcode(barcode:String) {
-        //When the barcode is received, the ISBN field is updated
-        isbnTextField.text = barcode
+        //Connects to Google WS to get Book info from the scanned ISBN
+        booksService.getBook(with: barcode) {
+            (scannedBook, error) in
+            if error != nil {
+                // Deal with error here
+                return
+                //Fill the form fields with the Book data recovered from WS
+            } else if let scannedBook = scannedBook {
+                self.titleTextField.text = scannedBook.title
+                self.authorTextField.text = scannedBook.author
+                self.bookCover.image = scannedBook.cover
+                self.isbnTextField.text = barcode
+            }else {
+                // Deal with no error, no book!
+            }
+        }
     }
 }
 
