@@ -41,5 +41,17 @@ class BooksManager {
     }
     
     /*************************** Add this code ****************************/
+    
+    
+    
+    /************************* Update this code ***************************/
+    
+    //Return the books collection
+    private func loadBooks()->[Book] {
+        //Loads the books from database
+        return retrieveBooks() ?? []
+    }
+    
+    /************************* Update this code ***************************/
 
 }
