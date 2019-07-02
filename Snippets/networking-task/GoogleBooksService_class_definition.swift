@@ -21,6 +21,15 @@ protocol BooksService {
 
 //Class to handle the Google Books service use
 class GoogleBooksService: BooksService {
+    //Represents a generic method to get Book info from a WS
+    func getBook(with barcode: String,
+                 completionHandler: @escaping (Book?, Error?) -> Void){
+        
+    }
+    //Represents a generic method to cancel any WS operations
+    func cancel(){
+        
+    }
 }
 
 /******************************************* Add this code ****************************************/

@@ -22,7 +22,7 @@ class BooksManager {
             //Queries database for all books
             let rs = try db.executeQuery(
                 /*As long as there is no a explicit ID field in database, SQLite creates a ROWID field
-                to store an autoincrement ID for the database records*/
+                 to store an autoincrement ID for the database records*/
                 "SELECT *, ROWID FROM Books", values: nil)
             //Iterates throughout the Result Set
             while rs.next() {
@@ -41,5 +41,16 @@ class BooksManager {
     }
     
     /*************************** Add this code ****************************/
-
+    
+    
+    
+    /************************* Update this code ***************************/
+    
+    //Return the books collection
+    private func loadBooks()->[Book] {
+        //Loads the books from database
+        return retrieveBooks() ?? []
+    }
+    
+    /************************* Update this code ***************************/
 }
