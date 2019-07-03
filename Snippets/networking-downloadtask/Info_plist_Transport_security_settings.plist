@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+ Info_plist_Transport_security_settings.plist
+ Bookcase
+ 
+ Created by Francisco Martinez on 7/3/19.
+ Copyright (c) 2019 Craig Grummitt. All rights reserved.
+ -->
+<plist version="1.0">
+    <dict>
+        <!-- ********************** Add this code ******************* -->
+        
+        <key>NSAppTransportSecurity</key>
+        <dict>
+            <key>NSExceptionDomains</key>
+            <dict>
+                <key>books.google.com</key>
+                <dict><key>NSExceptionAllowsInsecureHTTPLoads</key>
+                    <true/>
+                </dict>
+            </dict>
+        </dict>
+        
+        <!-- ********************** Add this code ******************* -->
+    </dict>
+</plist>

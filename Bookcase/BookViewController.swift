@@ -141,9 +141,18 @@ protocol BookViewControllerDelegate {
 //Define a extension that enables BookViewController may act as Delegate for BarcodeViewController
 extension BookViewController:BarcodeViewControllerDelegate {
     func foundBarcode(barcode:String) {
+        
+        /*Gets a reference to the UIApplication with its singleton type property shared
+         and turn on the activity indicator*/
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
         //Connects to Google WS to get Book info from the scanned ISBN
         booksService.getBook(with: barcode) {
             (scannedBook, error) in
+            
+            //Hides the indicator by setting the isNetworkActivityIndicatorVisible property to false
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            
             if error != nil {
                 // Deal with error here
                 return

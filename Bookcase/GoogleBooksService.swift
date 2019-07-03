@@ -5,6 +5,7 @@
 //  Created by Francisco Martinez on 7/1/19.
 //  Copyright © 2019 Craig Grummitt. All rights reserved.
 //
+import UIKit
 
 /*Defines a generic protocol to get Book info from a Web service. It enables a more flexible design
  as long as each specific provider class (e.g. Google, Amazon ...) will implement this protocol and
@@ -87,11 +88,15 @@ class GoogleBooksService: NSObject, BooksService, URLSessionDelegate {
                 let volume = items[0] as? [String:Any],
                 let volumeInfo = volume["volumeInfo"] as? [String:Any],
                 let title = volumeInfo["title"] as? String,
-                let authors = volumeInfo["authors"] as? [String] {
+                let authors = volumeInfo["authors"] as? [String],
+                let imageLinks = volumeInfo["imageLinks"] as? [String:Any],
+                let thumbnailURL = imageLinks["thumbnail"] as? String {
                 let book = Book(title: title,
                                 author: authors.joined(separator: ","),
                                 rating: 0, isbn: "0", notes: "")
-                completionHandler(book,nil)
+                loadCover(book: book,
+                          thumbnailURL: thumbnailURL,
+                          completionHandler: completionHandler)
                 
                 //If downcast unsuccessful
             } else {
@@ -103,6 +108,35 @@ class GoogleBooksService: NSObject, BooksService, URLSessionDelegate {
             return
         }
     }
+    
+    /*Downloads the image for the Book cover from the URL included in the JSON file
+     using DownloadTask*/
+    func loadCover(book:Book,thumbnailURL:String, completionHandler: @escaping (Book?, Error?) -> Void) {
+        var book = book
+        //Setup an URL for connection from thumbnail URL string
+        guard let url = URL(string: thumbnailURL) else {return}
+        
+        /*Because an image is a larger chunk of data that makes sense to receive as a file,
+         you’re going to get the book cover using a download task from the URLSession.
+         Because you’ll use the default configuration, this time let’s not instantiate a URLRequest,
+         and instead instantiate the task passing the URL object directly.*/
+        let task = session.downloadTask(with: url) { (tempURL, response, error) in
+            //Unwrap the optional URL and use it to create a Data object
+            if let tempURL = tempURL,
+                //Creating a data object can throw an error, so prefix this with an optional try.
+                //This line extracts Data from local URL
+                let data = try? Data(contentsOf: tempURL),
+                //Extracts UIImage from Data (requires UIKit import)
+                let image = UIImage(data: data) {
+                //Updates the book object cover
+                book.cover = image
+            }
+            completionHandler(book,error)
+        }
+        //Triggers task to begin
+        task.resume()
+    }
+    
     
     func cancel() {
     }

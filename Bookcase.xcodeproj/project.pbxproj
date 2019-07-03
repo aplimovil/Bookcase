@@ -47,6 +47,11 @@
 		0BB3D6D822BE8E6700D59545 /* BooksTableViewController_cell_content_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D6D722BE8E6700D59545 /* BooksTableViewController_cell_content_definition.swift */; };
 		0BB3D6DB22BE979100D59545 /* BookViewController_navigation_methods_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D6DA22BE979100D59545 /* BookViewController_navigation_methods_definition.swift */; };
 		0BB3D6DD22BEA22900D59545 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D6DC22BEA22900D59545 /* BookViewController.swift */; };
+		0BB3EC2922CCF658005A296F /* GoogleBooksService_parseJSON_image_parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3EC2822CCF658005A296F /* GoogleBooksService_parseJSON_image_parsing.swift */; };
+		0BB3EC2B22CCF807005A296F /* GoogleBooksService_parseJSON_loadCover_calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3EC2A22CCF807005A296F /* GoogleBooksService_parseJSON_loadCover_calling.swift */; };
+		0BB3EC2D22CCFCD5005A296F /* GoogleBooksService_loadCover_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3EC2C22CCFCD5005A296F /* GoogleBooksService_loadCover_method_addition.swift */; };
+		0BB3EC2F22CD0674005A296F /* Info_plist_Transport_security_settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BB3EC2E22CD0674005A296F /* Info_plist_Transport_security_settings.plist */; };
+		0BB3EC3122CD0B28005A296F /* BookViewController_network_activity_indicator_setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3EC3022CD0B28005A296F /* BookViewController_network_activity_indicator_setup.swift */; };
 		0BB3FD8122C51BDC00750D99 /* BookViewController_infoButton_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3FD8022C51BDC00750D99 /* BookViewController_infoButton_addition.swift */; };
 		0BB3FD8322C51FEB00750D99 /* BookViewController_toogleISBN_method_addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3FD8222C51FEB00750D99 /* BookViewController_toogleISBN_method_addition.swift */; };
 		0BB3FD8522C5215E00750D99 /* BookViewController_userdefaults_reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3FD8422C5215E00750D99 /* BookViewController_userdefaults_reading.swift */; };
@@ -138,6 +143,11 @@
 		0BB3D6D722BE8E6700D59545 /* BooksTableViewController_cell_content_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController_cell_content_definition.swift; sourceTree = "<group>"; };
 		0BB3D6DA22BE979100D59545 /* BookViewController_navigation_methods_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_navigation_methods_definition.swift; sourceTree = "<group>"; };
 		0BB3D6DC22BEA22900D59545 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		0BB3EC2822CCF658005A296F /* GoogleBooksService_parseJSON_image_parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBooksService_parseJSON_image_parsing.swift; sourceTree = "<group>"; };
+		0BB3EC2A22CCF807005A296F /* GoogleBooksService_parseJSON_loadCover_calling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBooksService_parseJSON_loadCover_calling.swift; sourceTree = "<group>"; };
+		0BB3EC2C22CCFCD5005A296F /* GoogleBooksService_loadCover_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBooksService_loadCover_method_addition.swift; sourceTree = "<group>"; };
+		0BB3EC2E22CD0674005A296F /* Info_plist_Transport_security_settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_plist_Transport_security_settings.plist; sourceTree = "<group>"; };
+		0BB3EC3022CD0B28005A296F /* BookViewController_network_activity_indicator_setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_network_activity_indicator_setup.swift; sourceTree = "<group>"; };
 		0BB3FD8022C51BDC00750D99 /* BookViewController_infoButton_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_infoButton_addition.swift; sourceTree = "<group>"; };
 		0BB3FD8222C51FEB00750D99 /* BookViewController_toogleISBN_method_addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_toogleISBN_method_addition.swift; sourceTree = "<group>"; };
 		0BB3FD8422C5215E00750D99 /* BookViewController_userdefaults_reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController_userdefaults_reading.swift; sourceTree = "<group>"; };
@@ -277,6 +287,7 @@
 		0BB3D6CB22BE82E900D59545 /* Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				0BB3EC2722CCF602005A296F /* networking-downloadtask */,
 				0B76AC2C22CA628700E853BD /* networking-task */,
 				0B76AC0222CA3E9A00E853BD /* databases */,
 				0BB3FD7F22C51BA400750D99 /* userdefaults */,
@@ -309,6 +320,18 @@
 				0BD56F5622BEAD8B00669D09 /* BooksTableViewController_prepareForSegue_and_delegate_protocol_definition.swift */,
 			);
 			path = navigation;
+			sourceTree = "<group>";
+		};
+		0BB3EC2722CCF602005A296F /* networking-downloadtask */ = {
+			isa = PBXGroup;
+			children = (
+				0BB3EC2822CCF658005A296F /* GoogleBooksService_parseJSON_image_parsing.swift */,
+				0BB3EC2A22CCF807005A296F /* GoogleBooksService_parseJSON_loadCover_calling.swift */,
+				0BB3EC2C22CCFCD5005A296F /* GoogleBooksService_loadCover_method_addition.swift */,
+				0BB3EC2E22CD0674005A296F /* Info_plist_Transport_security_settings.plist */,
+				0BB3EC3022CD0B28005A296F /* BookViewController_network_activity_indicator_setup.swift */,
+			);
+			path = "networking-downloadtask";
 			sourceTree = "<group>";
 		};
 		0BB3FD7F22C51BA400750D99 /* userdefaults */ = {
@@ -508,6 +531,7 @@
 			files = (
 				B9019F851CE229D500CAE744 /* LaunchScreen.storyboard in Resources */,
 				0BA8F27322C134C60038A28C /* BookcaseMedia.zip in Resources */,
+				0BB3EC2F22CD0674005A296F /* Info_plist_Transport_security_settings.plist in Resources */,
 				B9019F821CE229D500CAE744 /* Assets.xcassets in Resources */,
 				0B76AC0522CA400E00E853BD /* Books.db in Resources */,
 				B9019F801CE229D500CAE744 /* Main.storyboard in Resources */,
@@ -554,6 +578,7 @@
 				0B76AC1F22CA478400E853BD /* BooksManager_getOpenDB_method_addition.swift in Sources */,
 				0B76AC2122CA496500E853BD /* Book_init_methods_update_for_DB.swift in Sources */,
 				0B76AC0722CA422F00E853BD /* BooksManager_database_path_definition.swift in Sources */,
+				0BB3EC3122CD0B28005A296F /* BookViewController_network_activity_indicator_setup.swift in Sources */,
 				0BE10B6122C39CE3001A093A /* BarcodeViewController_metadataOutput_configuration.swift in Sources */,
 				0BB3D6CE22BE837200D59545 /* BooksTableViewController_rows_handling_test.swift in Sources */,
 				0B76AC1A22CA44EE00E853BD /* FMDatabaseQueue.m in Sources */,
@@ -563,6 +588,7 @@
 				0B76AC3422CA688300E853BD /* BookViewController_foundBarcode_method_update.swift in Sources */,
 				0BE10B6722C3A589001A093A /* BarcodeViewController_camera_preview_addition.swift in Sources */,
 				0B76AC1C22CA44EE00E853BD /* FMDatabase.m in Sources */,
+				0BB3EC2D22CCFCD5005A296F /* GoogleBooksService_loadCover_method_addition.swift in Sources */,
 				0BB3D6D622BE8B7D00D59545 /* BooksManager_class_definition.swift in Sources */,
 				0BE10B5B22C39786001A093A /* BarcodeViewController_AVCaptureSession_setup.swift in Sources */,
 				0B76AC2722CA533800E853BD /* BooksManager_SQLAddBook_method_addition.swift in Sources */,
@@ -581,9 +607,11 @@
 				0BA8F27022C1301E0038A28C /* BooksManagerAndController_removeBook_handling.swift in Sources */,
 				0BB3D6DD22BEA22900D59545 /* BookViewController.swift in Sources */,
 				0BA8F26E22C12C020038A28C /* BooksManagerAndController_updateBook_handling.swift in Sources */,
+				0BB3EC2B22CCF807005A296F /* GoogleBooksService_parseJSON_loadCover_calling.swift in Sources */,
 				0BB3D6DB22BE979100D59545 /* BookViewController_navigation_methods_definition.swift in Sources */,
 				0BE10B6522C3A266001A093A /* BarcodeViewController_barcode_reading_handling.swift in Sources */,
 				0BEC061722C2610F0099DA47 /* BarcodeViewController.swift in Sources */,
+				0BB3EC2922CCF658005A296F /* GoogleBooksService_parseJSON_image_parsing.swift in Sources */,
 				0B7888D122C122D900EEBD4D /* BooksTableViewController_prepareForSegue_update_for_editing.swift in Sources */,
 				0B76AC3822CA6D3800E853BD /* GoogleBooksService_URL_definition.swift in Sources */,
 				0BB3D6D422BE8A1600D59545 /* BooksManager.swift in Sources */,
@@ -765,6 +793,7 @@
 					"\"Snippets/userdefaults/*\"",
 					"\"Snippets/databases/*\"",
 					"\"Snippets/networking-task/*\"",
+					"\"Snippets/networking-downloadtask/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -791,6 +820,7 @@
 					"\"Snippets/userdefaults/*\"",
 					"\"Snippets/databases/*\"",
 					"\"Snippets/networking-task/*\"",
+					"\"Snippets/networking-downloadtask/*\"",
 				);
 				INFOPLIST_FILE = Bookcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
